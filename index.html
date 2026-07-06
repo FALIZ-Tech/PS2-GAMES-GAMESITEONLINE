@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>PS2 ISO Vault — Neo Brutal</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700;900&family=Inter:wght@400;600;800;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="float-shape s1"></div>
+  <div class="float-shape s2"></div>
+  <div class="float-shape s3"></div>
+
+  <header>
+    <div class="pill">Fahad's PS2 Vault</div>
+    <h1>PS2 ISO VAULT</h1>
+    <p class="subtitle">4033 games · direct links · GAMESITEONLINE</p>
+    <a class="wa-badge" href="https://whatsapp.com/channel/0029VbChyDUI1rcht5jajL3q" target="_blank" rel="noopener">
+      Join Fahad's Channel
+    </a>
+  </header>
+
+  <section class="stats">
+    <div class="stat"><div class="stat-num" id="s-total">115</div><div class="stat-label">Total Games</div></div>
+    <div class="stat"><div class="stat-num" id="s-genres">16</div><div class="stat-label">Genres</div></div>
+    <div class="stat"><div class="stat-num">ISO</div><div class="stat-label">Format</div></div>
+    <div class="stat"><div class="stat-num" style="color:var(--green)">FREE</div><div class="stat-label">No Cost</div></div>
+  </section>
+
+  <section class="controls">
+    <div class="search-wrap">
+      <svg viewBox="0 0 24 24"><path d="M21 21l-4.35-4.35M16.5 10.5a6 6 0 11-12 0 6 6 0 0112 0z" stroke="#111" stroke-width="2.2" fill="none" stroke-linecap="round"/></svg>
+      <input type="search" id="q" placeholder="Search game title…" autocomplete="off" />
+    </div>
+    <select id="genre-filter"><option value="">All Genres</option></select>
+    <select id="region-filter">
+      <option value="">All Regions</option>
+      <option value="USA">USA (NTSC-U)</option>
+      <option value="Japan">Japan (NTSC-J)</option>
+    </select>
+    <div class="count-display">Showing <span id="vis-count">115</span> games</div>
+  </section>
+
+  <main id="grid"></main>
+  <div id="no-results">No games found — try a different search</div>
+
+  <footer>
+    All ISOs hosted on <a href="https://archive.org" target="_blank" rel="noopener">archive.org</a>.
+  </footer>
+
+  <script src="ps2games.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
